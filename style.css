@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+nav {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(242, 242, 242);
+    font-weight: 100;
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+    display: grid;
+    border: 2px solid rgb(255, 255, 255);
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+img {
+    width: 200px;
+}
+@media (max-width:500px) {
+   .container{
+    grid-template-columns:1fr;
+   }
+}
